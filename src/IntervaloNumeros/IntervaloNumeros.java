@@ -43,9 +43,9 @@ public class IntervaloNumeros {
     public String toString() {
         StringBuilder sb = new StringBuilder();
         sb.append("Os números digitados foram: ");
-        sb.append(num1);
+        sb.append(getNum1());
         sb.append(" e ");
-        sb.append(num2);
+        sb.append(getNum2());
         sb.append("\n");
         sb.append("Os números do intervalo dos dois números são: ");
         sb.append(getIntervalos());
