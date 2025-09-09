@@ -4,6 +4,15 @@ public class Usuario {
     public String nome;
     public String sobrenome;
 
+   public Usuario(String nome, String sobrenome) {
+	   setNome(nome);
+	   setSobrenome(sobrenome);
+   }
+   
+   public Usuario() {
+	   
+   }
+    
     public String getNome() {
         return nome;
     }

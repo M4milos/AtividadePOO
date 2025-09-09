@@ -6,6 +6,17 @@ public class Pessoa {
     private double Peso;
     private double Altura;
 
+    public Pessoa() {
+    	
+    }
+    
+    public Pessoa(int idade, String nome, double peso, double altura) {
+    	setIdade(idade);
+    	setNome(nome);
+    	setPeso(peso);
+    	setAltura(altura);
+    }
+    
     public int getIdade() {
         return Idade;
     }

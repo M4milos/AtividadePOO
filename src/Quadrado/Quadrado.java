@@ -4,6 +4,13 @@ public class Quadrado {
 
     private int lado;
 
+    public Quadrado() {
+    	
+    }
+    
+    public Quadrado(int lado) {
+    	setLado(lado);
+    }
 
     public int getLado() {
         return lado;

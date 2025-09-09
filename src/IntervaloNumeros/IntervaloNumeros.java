@@ -4,6 +4,15 @@ public class IntervaloNumeros {
     public int num1;
     public int num2;
 
+    public IntervaloNumeros() {
+    	
+    }
+    
+    public IntervaloNumeros(int num1, int num2) {
+    	setNum1(num1);
+    	setNum2(num2);
+    }
+    
     public int getNum1() {
         return num1;
     }

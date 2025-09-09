@@ -12,9 +12,7 @@ public class UsuarioMain {
         System.out.print("Digite seu sobrenome: ");
         String sobrenome = sc.nextLine();
 
-        Usuario us = new Usuario();
-        us.setNome(nome.trim());
-        us.setSobrenome(sobrenome.trim());
+        Usuario us = new Usuario(nome.trim(), sobrenome.trim());
 
         System.out.println(us);
 
