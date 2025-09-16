@@ -50,7 +50,7 @@ public class Piramide {
     }
 
     public double RetornaApotema() {
-        return Math.sqrt(getAltura() * getAltura() + (getAresta() / 2) * (getAresta() / 2));
+        return Math.sqrt(getAltura() * getAltura() + (getAresta() * (getAresta())));
     }
 
     public double RetornaAreaBase() {
