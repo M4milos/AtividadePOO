@@ -50,20 +50,20 @@ public class Piramide {
     }
 
     public double RetornaApotema() {
-        return Math.sqrt(getAltura() * getAltura() + (getAresta() * (getAresta())));
+        return Math.sqrt((getAltura() * getAltura()) + (getAresta() * (getAresta())));
     }
 
     public double RetornaAreaBase() {
-        return getAresta() * getAresta();
+        return Math.pow(2 * getAresta(), 2);
     }
 
     public double RetornaAreaTriangulo() {
         double apotema = RetornaApotema();
-        return (getAresta() * apotema) / 2;
+        return (getAresta() * apotema);
     }
 
     public double RetornaAreaTotal() {
-        return RetornaAreaBase() + 4 * RetornaAreaTriangulo();
+        return RetornaAreaBase() + (4 * RetornaAreaTriangulo());
     }
 
     public double RetornaVolume() {

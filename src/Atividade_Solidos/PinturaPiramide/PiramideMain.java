@@ -7,10 +7,10 @@ public class PiramideMain {
         Scanner sc = new Scanner(System.in);
 
         System.out.print("Digite o tamanho da aresta base da Pirâmide: ");
-        double aresta = sc.nextInt();
+        double aresta = sc.nextDouble();
 
         System.out.print("Digite a altura da Pirâmide: ");
-        double altura = sc.nextInt();
+        double altura = sc.nextDouble();
 
         int tipoTinta = 0;
 
