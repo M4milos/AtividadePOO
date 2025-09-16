@@ -6,6 +6,17 @@ public class Pessoa {
     private double Peso;
     private double Altura;
 
+    public Pessoa() {
+    	
+    }
+    
+    public Pessoa(int idade, String nome, double peso, double altura) {
+    	setIdade(idade);
+    	setNome(nome);
+    	setPeso(peso);
+    	setAltura(altura);
+    }
+    
     public int getIdade() {
         return Idade;
     }
@@ -63,16 +74,16 @@ public class Pessoa {
         str.append("--- A pessoa definda ficou ---");
         str.append("\n");
         str.append("Nome: ");
-        str.append(Nome);
+        str.append(getNome());
         str.append("\n");
         str.append("Idade: ");
-        str.append(Idade);
+        str.append(getIdade());
         str.append("\n");
         str.append("Peso: ");
-        str.append(Peso);
+        str.append(getPeso());
         str.append("\n");
         str.append("Altura: ");
-        str.append(Altura);
+        str.append(getAltura());
         return str.toString();
     }
 }

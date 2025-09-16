@@ -18,13 +18,9 @@ public class PessoaMain {
 
         System.out.print("Digite o peso da pessoa (em kg): ");
         double peso = sc.nextDouble();
-        sc.nextLine(); // consome o enter pendente
+        sc.nextLine();
 
-        Pessoa pessoa = new Pessoa();
-        pessoa.setNome(nome);
-        pessoa.setIdade(idade);
-        pessoa.setAltura(altura);
-        pessoa.setPeso(peso);
+        Pessoa pessoa = new Pessoa(idade, nome, peso, altura);
 
         boolean sair = false;
 

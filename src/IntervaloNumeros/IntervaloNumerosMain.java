@@ -20,9 +20,7 @@ public class IntervaloNumerosMain {
             num2 = temp;
         }
 
-        IntervaloNumeros intervalos = new IntervaloNumeros();
-        intervalos.setNum1(num1);
-        intervalos.setNum2(num2);
+        IntervaloNumeros intervalos = new IntervaloNumeros(num1, num2);
 
         System.out.print(intervalos);
 

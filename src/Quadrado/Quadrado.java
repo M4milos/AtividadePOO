@@ -4,6 +4,13 @@ public class Quadrado {
 
     private int lado;
 
+    public Quadrado() {
+    	
+    }
+    
+    public Quadrado(int lado) {
+    	setLado(lado);
+    }
 
     public int getLado() {
         return lado;
@@ -22,7 +29,7 @@ public class Quadrado {
     public String toString() {
         StringBuilder str = new StringBuilder();
         str.append("Lado do quadrado =");
-        str.append(lado);
+        str.append(getLado());
         str.append(", area()=");
         str.append(area());
         str.append("]");
